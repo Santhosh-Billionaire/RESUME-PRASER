@@ -1,10 +1,10 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-  user: 'postgres',
+  user: 'postgres', //username of the psql database 
   host: 'localhost',
-  database: 'resume_db',
-  password: '172314',
+  database: 'resume_db', //enter the name of the database 
+  password: '', //enter your databse password
   port: 5432, // default PostgreSQL port
 });
 
