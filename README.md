@@ -26,12 +26,31 @@ Built with **React**, **Material-UI**, and **Node.js**, this tool helps convert 
 ## 📁 Project Structure
 
 ```plaintext
+
 resume/
-├── src/           # React frontend
-├── public/        # HTML & static assets
-├── server/        # Node.js + Python backend
-├── .env           # Environment variables (excluded from Git)
-├── README.md
+├── src/                      # Frontend source code
+│   ├── components/           # React components
+|   |    |___ParsedData.js     
+|   |    |___ResumeUploader.js
+│   ├── index.js              # Main entry point for React app
+│   └── App.js                # Root React component
+│
+├── public/                   # Static files
+│   └── index.html            # Main HTML file
+│
+├── server/                   # Backend server code
+│   ├── node_modules/         # Server dependencies
+│   ├── index.js              # Main server file
+|   |-- db.js                 # Add your own database 
+|   |--.env                   # Database and port number calling 
+│   ├── package.json          # Server dependencies list
+│   └── package-lock.json     # Server dependencies lock file
+│
+├── node_modules/             # Frontend dependencies
+├── venv/                     # Python virtual environment
+├── package.json              # Frontend dependencies list
+├── package-lock.json         # Frontend dependencies lock file
+└── README.md                 # Project documentation
 ```
 
 ---
